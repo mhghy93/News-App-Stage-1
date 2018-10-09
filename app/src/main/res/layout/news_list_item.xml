@@ -17,6 +17,16 @@
         tools:text="section-name" />
 
     <TextView
+        android:id="@+id/news_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="author-name" />
+
+    <TextView
         android:id="@+id/news_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

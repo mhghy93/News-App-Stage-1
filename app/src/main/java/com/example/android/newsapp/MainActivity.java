@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private static final int NEWS_LOADER_ID = 1;
     //URL for news data
     private static final String NEWS_URL
-            = "https://content.guardianapis.com/search?api-key=2345bab3-1fe6-48b6-a300-b6fc5aafd6fe";
+            = "https://content.guardianapis.com/search?show-tags=contributor&api-key=2345bab3-1fe6-48b6-a300-b6fc5aafd6fe";
     /**
      * TextView that is displayed when the list is empty
      */

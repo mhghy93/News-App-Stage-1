@@ -77,9 +77,12 @@ public final class QueryUtils {
                 // Extract the value for the key called "webUrl"
                 String newsWebUrl = currentNews.getString("webUrl");
 
+                //Stores the author name
+                String authorName = currentNews.getJSONArray("tags").getJSONObject(0).getString("webTitle");
+
                 // Create a new {@link News} object with the newsTitle, newsSectionName, publicationDate,
                 // and newsWebUrl from the JSON response.
-                News news = new News(newsTitle, newsSectionName, publicationDate, newsWebUrl);
+                News news = new News(newsTitle, newsSectionName, publicationDate, newsWebUrl, authorName);
                 newsList.add(news);
 
 

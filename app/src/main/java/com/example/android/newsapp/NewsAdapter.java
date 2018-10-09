@@ -54,6 +54,11 @@ public class NewsAdapter extends ArrayAdapter<News> {
         // Display the news section name of the current news in that TextView
         newsSectionNameView.setText(currentNews.getSectionName());
 
+        // Find the TextView with view ID news_author_name
+        TextView newsAuthorNameView = (TextView) convertView.findViewById(R.id.news_author_name);
+        // Display the news author name of the current news in that TextView
+        newsAuthorNameView.setText(currentNews.getAuthorName());
+
         //Variable that holds the date and time in the format (yyyy-mm-ddThh:mm:ssZ)
         String newsPublishedDateAndTime = currentNews.getDatePublished();
         //String array that hols the date and time
